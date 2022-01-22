@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Table</h1>
+    <table border="1" cellpadding="10" cellspacing="1">
+    <tr>
+        <th>Nama</th>
+        <th align="center">Umur</th>
+        <th>Gender</th>
+    </tr>
+    <tr>
+        <td>Rifqi</td>
+        <td align="center">17</td>
+        <td>Laki-laki</td>
+    </tr>
+    </table>
+</body>
+</html>
+<h1>Table Colspan & Rowspan</h1>
+<table border="1" cellpadding="10">
+    <tr>
+<th>Seller </th>
+<th>Item</th>
+<th>Qty</th>
+<th>Harga</th>
+    </tr>
+    <tr>
+<td rowspan="2">Toko Sinar</td>
+<td>Buku</td>
+<td>1</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>Pulpen</td>
+<td>1</td>
+<td>1000</td>
+</tr>
+
+<tr>
+    <td colspan="3">Total</td>
+    <td>6000</td>
+    </tr>
+
+<h1>
+    <input type="text">
+    <button>search</button>
+    <label for="text"></label>
+
+    <input type="email">
+    <input type="image">
+</h1>
+
+<h1>Form</h1>
+<form name="form-login" method="POST" action="saveprofile.php">
+<label for="username">Username   </label>
+    <input name="Username" type="text" placeholder="masukan nama kamu">
+<br>
+<br>
+<label for="password">Password  </label>
+<input name="Username" type="password" placeholder="masukkan password kamu">
+</form>
+<br>
+<br>
+<label for="photo">Upload Photo</label><br>
+<input name="photo" type="file" multiple>
+<br>
+<br>
+<br>
+<label for="gender">Gender</label> <br>
+<input type="radio" name="gender" value="laki-laki">Laki-Laki
+<input type="radio" name="gender" value="perempuan">Perempuan
+<br>
+<br>
+<label for="Pilihan Checkout">Penghasilan</label><br>
+<input type="checkbox" name="Pilihan Checkout" value="Miskin">Miskin <br>
+<input type="checkbox" name="Pilihan Checkout" value="Kaya">Kaya
+<br>
+<input type="button" value="submit">
+<br>
+
+<input type="text" name="fullname" value="John Doe"><br>
+<input type="text" name="fullname"  value="John Doe" readonly/><br>
+<input type="text" name="fullname"  value="John Doe" disabled/><br>
+<br>
+<label for="About me">About Me</label><br>
+
+<textarea name="About me" id="" cols="30" rows="10"></textarea>
+<br>
+<label for="Pilihan portofolio">Pilihan Portofolio</label>
+<select name="Jenis Kripto">
+<option value="Ethereum">Ethereum</option>
+<option value="Koin micin">Koin micin</option>
+</select>

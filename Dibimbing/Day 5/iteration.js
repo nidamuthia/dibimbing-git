@@ -1,0 +1,11 @@
+let cars = ["Saab", "Volvo", "BMW"];
+cars.map(car => console.log(car, "carss"));
+let carFilter = cars.filter(car => {return car == "BMW" });
+console.log(carFilter);
+console.log(cars);
+cars.forEach((car, i) => {console.log(car + "" + i) });
+let someIsVolvo = cars.some(car => {return car != "Volvo";
+});
+console.log(someIsVolvo);
+let allIsvolvo = cars.every(car => {return car != "Volvo" });
+console.log(allIsvolvo);

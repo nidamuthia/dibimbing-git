@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Part 2</title>
+
+  <style>
+    .custom-input {
+      background: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ordered List</h1>
+  <ol>
+    <li>Ranking 1</li>
+    <li>Ranking 2</li>
+    <li>Ranking 3</li>
+  </ol>
+
+  <ol type="a">
+    <li>Ranking 1</li>
+    <li>Ranking 2</li>
+    <li>Ranking 3</li>
+  </ol>
+
+  <ol type="A">
+    <li>Ranking 1</li>
+    <li>Ranking 2</li>
+    <li>Ranking 3</li>
+  </ol>
+
+  <ol type="i">
+    <li>
+      Ranking 1
+      <ol type="i">
+        <li>Ranking Child 1</li>
+        <li>Ranking Child 2</li>
+        <li>Ranking Child 3</li>
+      </ol>
+    </li>
+    <li>Ranking 2</li>
+    <li>Ranking 3</li>
+  </ol>
+
+  <h1>Unordered List</h1>
+  <ul type="-">
+    <li>Windows</li>
+    <li>Linux
+      <ul>
+        <li>Ubuntu
+          <ul>
+            <li>Level 3</li>
+            <li>Level 3</li>
+            <li>Level 3</li>
+          </ul>
+        </li>
+        <li>Redhat</li>
+        <li>Debian</li>
+      </ul>
+    </li>
+    <li>Mac</li>
+  </ul>
+
+  <h1>Table</h1>
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <th>Nama</th>
+      <th align="center">Umur</th>
+      <th align="right">Gender</th>
+    </tr>
+    <tr>
+      <th>Nama</th>
+      <th align="center">Umur</th>
+      <th align="right">Gender</th>
+    </tr>
+    <tr>
+      <td>Rifqy</td>
+      <td align="center">17</td>
+      <td align="right">Laki-Laki</td>
+    </tr>
+    <tr>
+      <td>Budi</td>
+      <td align="center">17</td>
+      <td align="right">Laki-Laki</td>
+    </tr>
+    <tr>
+      <td>Ani</td>
+      <td align="center">17</td>
+      <td align="right">Perempuan</td>
+    </tr>
+    <tr>
+      <td>John<br />Doe</td>
+      <td align="center">17</td>
+      <td align="right">
+        <!-- <img src="./image-sample.jpeg" alt="Sample Image"> -->
+        <a href="https://dibimbing.id">External Link</a>
+      </td>
+    </tr>
+  </table>
+
+  <h1>Table Colspan & Rowspan</h1>
+  <table border="1" cellpadding="10">
+    <tr>
+      <th>Seller</th>
+      <th>Item</th>
+      <th>Qty</th>
+      <th>Harga</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Toko Sinar</td>
+      <td>Buku</td>
+      <td>1</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <td>Pulpen</td>
+      <td>1</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td colspan="3">Total</td>
+      <td>6000</td>
+    </tr>
+  </table>
+
+  <h1>Table thead & tbody</h1>
+  <table border="1" cellpadding="10">
+    <thead>
+      <tr>
+        <th>Seller</th>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Harga</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Toko Sinar</td>
+        <td>Buku</td>
+        <td>1</td>
+        <td>5000</td>
+      </tr>
+      <tr>
+        <td>Pulpen</td>
+        <td>1</td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td colspan="3">Total</td>
+        <td>6000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1>Form</h1>
+  <form name="form-login" method="POST" action="/saveprofile">
+    <label for="username">Username</label>
+    <input name="username" type="text" placeholder="Masukan username kamu disini" value="johndoe" readonly><br>
+    <input name="username" type="text" placeholder="Masukan username kamu disini" value="johndoe" disabled>
+    <br>
+    <br>
+
+    <label for="email">Email</label>
+    <input name="email" type="email" placeholder="Masukan email kamu disini" class="custom-input">
+    <br>
+    <br>
+
+    <label for="phone">Telephone number</label>
+    <input name="phone" type="tel" placeholder="Masukan phone kamu disini">
+    <br>
+    <br>
+
+    <label for="password">Password</label>
+    <input name="password" type="password" placeholder="Masukan password kamu disini">
+    <br>
+    <br>
+
+    <label for="photo">Upload Photo</label><br>
+    <input name="photo" type="file" multiple><br>
+    <!-- <a href="./MOCK_DATA.xls" target="_blank">Link Template</a> -->
+    <br>
+    <br>
+    <label for="gender">Gender</label><br>
+    <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+    <input type="radio" name="gender" value="Perempuan"> Perempuan
+    <br>
+    <br>
+
+    <input type="checkbox" name="vehicle1" value="Bike">
+    <label for="vehicle1">Bike</label>
+    <input type="checkbox" name="vehicle2" value="Car">
+    <label for="vehicle2">Car</label>
+    <input type="checkbox" name="vehicle3" value="Boat">
+    <label for="vehicle3">Boat</label>
+    <br>
+    <br>
+
+    <label for="about-me">About Me</label><br>
+    <textarea name="about-me" cols="30" rows="3"></textarea>
+    <br>
+    <br>
+    <label for="kota">Kota</label><br>
+    <select name="kota">
+      <option value="Jakarta Selatan">Jakarta Selatan</option>
+      <option value="Jakarta Pusat">Jakarta Pusat</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="kota">Kota Option Group</label><br>
+    <select name="kota">
+      <optgroup label="DKI Jakarta">
+        <option value="Jakarta Selatan">Jakarta Selatan</option>
+        <option value="Jakarta Pusat">Jakarta Pusat</option>
+      </optgroup>
+      <optgroup label="Jawa Barat">
+        <option value="Bandung">Bandung</option>
+        <option value="Depok">Depok</option>
+      </optgroup>
+    </select>
+    <br>
+    <br>
+
+    <input type="button" value="Submit">
+  </form>
+</body>
+</html>
